@@ -1,0 +1,143 @@
+.ourAchivements-secction{
+    width: 100%;
+}
+.ourArchivements-content{
+    max-width: 1200px;
+    margin: 6em auto;
+    display: flex;
+}
+.ourArchivements-left{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    border-radius: 20px;
+    padding: 2em;
+}
+.ourArchivements-left::before{
+    position: absolute;
+    content: "";
+    width: 370px;
+    height: 420px;
+    z-index: -1;
+    transform: rotate(110deg);
+    background: var(--color1);
+    border-radius: 20px;
+    }
+.ourArchivements-left img{
+    width: 400px;
+    height: 450px;
+    border-radius: 20px;
+
+}
+.ourArchivements-right{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    gap: 30px;
+    padding: 3em;
+
+}
+.ourArchivements-right h1{
+    font-size: 3.5em;
+    color: var(--color1);
+}
+.ourArchivements-right p{
+    font-size: 1em;
+    color: var(--color1);
+}
+.ourArchivements-right button{
+    font-size: 1.5em;
+    color: var(--color4);
+    background: var(--color1);
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+}
+
+@media (max-width:1200px) {
+    .ourArchivements-left::before{
+        width: 320px;
+        height: 370px;
+       
+        }
+    .ourArchivements-left img{
+        width: 350px;
+        height: 400px;
+    
+    }
+    .ourArchivements-right h1{
+        font-size: 3em;
+    }
+    .ourArchivements-right p{
+        font-size: 0.8em;
+    }
+    .ourArchivements-right button{
+        font-size: 1.2em;
+       
+    }
+    
+}
+@media (max-width:1000px) {
+    .ourArchivements-content{
+        display: flex;
+        flex-direction: column;
+    }
+    .ourArchivements-left{
+        width: 100%;
+    }
+    .ourArchivements-right{
+        width: 100%;
+        padding: 3em 10em;
+    
+    }
+}
+@media (max-width:800px) {
+    .ourArchivements-right{
+        width: 100%;
+        padding: 3em 6em;
+    
+    }
+}
+@media (max-width:600px) {
+    .ourArchivements-left img{
+        width: 300px;
+        height: 350px;
+    
+    }
+    .ourArchivements-left::before{
+        width: 270px;
+        height: 320px;
+       
+        }
+    .ourArchivements-right{
+        padding: 3em 3em;
+    
+    }
+    .ourArchivements-right h1{
+        font-size: 2em;
+    }
+    
+}
+@media (max-width:400px) {
+    .ourArchivements-left img{
+        width: 250px;
+        height: 310px;
+    
+    }
+    .ourArchivements-left::before{
+        width: 200px;
+        height: 250px;
+       
+        }
+    .ourArchivements-right{
+        padding: 3em 2em;
+    
+    }
+    .ourArchivements-right h1{
+        font-size: 2em;
+    }
+}

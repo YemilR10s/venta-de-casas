@@ -32,7 +32,6 @@ export const Home = () => {
                 className="home-button">
                 Our Projects
             </motion.button>
-        </div>
         <div className="ProfessionalOverview">
             <div className="previous">
                 <p>Previous Projects</p>
@@ -46,6 +45,7 @@ export const Home = () => {
                 <p>Ongoing Projects</p>
                 <span><CountUp start={0} end={220} duration={2}/>+</span>
             </div>
+        </div>
         </div>
     </main>
     </>

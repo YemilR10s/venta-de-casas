@@ -1,4 +1,5 @@
 import Navbar from "./components/navbar"
+import { OurAchivements } from "./components/ourAchivements"
 import { Home } from "./pages/home"
 
 
@@ -8,6 +9,7 @@ function App() {
     <>
       <Navbar/>
       <Home/>
+      <OurAchivements/>
     </>
   )
 }
