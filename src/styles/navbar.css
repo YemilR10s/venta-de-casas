@@ -1,0 +1,116 @@
+/* Navbar.css */
+.navbar {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: none;
+    color: var(--color1);
+    position: relative;
+  }
+  
+  .navbar .logo {
+    width: 150px;
+  }
+  
+  .navbar .hamburger {
+    position: absolute;
+    display: none;
+    cursor: pointer;
+    top: 0;
+    right: 0;
+    margin: 20px;
+    z-index: 2;
+  }
+  
+  .navbar .hamburger .bar {
+    background-color: var(--color1);
+    height: 3px;
+    width: 30px;
+    margin: 3px 0;
+    transition: all 0.3s ease;
+  }
+  
+  .hamburger.active .bar:nth-child(1) {
+    transform: rotate(45deg) translate(5px, 4px);
+  }
+  
+  .hamburger.active .bar:nth-child(2) {
+    opacity: 0;
+  }
+  
+  .hamburger.active .bar:nth-child(3) {
+    transform: rotate(-45deg) translate(5px, -4px);
+  }
+  
+  .navbar .nav-links {
+    display: flex;
+    gap: 20px;
+
+  }
+  
+
+  .navbar .nav-links li {
+    list-style: none;
+  }
+  
+  .navbar .nav-links a {
+    text-decoration: none;
+    color: var(--color1);
+    padding: 5px 10px;
+    font-size: 1.3em;
+    font-weight: 600;
+  }
+  .navbar .nav-links a:hover{
+    border-bottom: 3px solid var(--color2);
+  }
+  
+  .contact-btn{
+    width: 120px;
+    padding: 10px;
+    background: none;
+    border-radius: 10px;
+    cursor: pointer;
+  }
+  .contact-btn:hover{
+    background: var(--color1);
+    color: var(--color2);
+  }
+  
+  
+  @media (max-width: 768px) {
+    .navbar .hamburger {
+      display: block;
+    }
+    .navbar .nav-links {
+        position: absolute;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        top: 0;
+        left: -100%;
+        width: 300px;
+        height: 400px;
+        background: var(--color2);
+        transition: all 0.5s;
+      }
+      .navbar .nav-links.show{
+        left: 0;
+        transition: all 0.5s;
+      }
+  }
+  @media (max-width: 500px){
+    /* Navbar.css */
+    .navbar {
+        justify-content: center;
+    }
+    .navbar .logo {
+        width: 100px;
+      }
+     .contact-btn{
+        width: 100px;
+        margin-left: 10px;
+        
+      }
+  }
+  
